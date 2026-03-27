@@ -1,4 +1,4 @@
-# Blockchain Freight SupplyChain Project 
+# Blockchain Freight Supplychain Project 
 ### CSE 540: Engineering Blockchain Application
 This project implements a hybrid blockchain-Django solution for freight supply chain management. It enables secure shipment tracking, booking confirmations, and payments using Ethereum smart contracts, while providing a user-friendly interface with Django and Stripe integration. Key features include immutable payment records, shipment provenance, and automated reporting for admins and users.
 ## Overview
