@@ -49,13 +49,14 @@ Note: File with settings and configurations are always hidden for security reaso
           - python runserver # this will run your settings.py and provide a link to your application for your browser  
             <img width="1247" height="211" alt="image" src="https://github.com/user-attachments/assets/3d41ec8e-60ce-4eac-a674-ed54c30ff719" />
 
-7. Use Ngrok : - Ngrok creates a public link to your localhost which can be accessed over the web to connect your application with stripe(only for local production) so instead of using http://127.0.0.1:8000/ it will be converted to a secure public link so use that to access your application
+ 7. Use Ngrok : - Ngrok creates a public link to your localhost which can be accessed over the web to connect your application with stripe(only for local  production) so instead of using http://127.0.0.1:8000/ it will be converted to a secure public link so use that to access your application
 <img width="1063" height="402" alt="image" src="https://github.com/user-attachments/assets/444df54f-5c9d-4ef5-bfeb-e992765d4009" />
+Update the generated public secure URL in settings.py
 
-9. Setup Stripe for payments
+ 9. Setup Stripe for payments
    - create an account with stripe : https://stripe.com/en-ca #based on region
    - Go to dashboard -> developer and get API Keys and cpoy Publishable key and Secret key and update them in settings.py
-   - Download stripe.exe if you are using windows and run it using command line enter stripe listen http: <port> #This Listens for webhook events and generates secret key with whsec_......... copy the key and update your settings.py #python page
+   - Download stripe.exe if you are using windows and run it using command line enter stripe listen http: <port> #This Listens for webhook events and generates  secret key with whsec_......... copy the key and update your settings.py #python page
    - <img width="1103" height="143" alt="image" src="https://github.com/user-attachments/assets/004eafe9-db6b-4479-86c8-6aed38e492ea" />
 
 
