@@ -50,6 +50,9 @@ Note: File with settings and configurations are always hidden for security reaso
        - Run below commands
           - python manage.py makemigrations #this will create your tables ready to be uploaded on postgreeDB (the files run are in models.py)
           - python manage.py migrate #this will upload create a database and your table schemas on postgreeDB
+          - Create Admin Accounts:
+             -  python manage.py createsuperuser #Run the createsuperuser command
+             -  python manage.py createsuperuser --username admin --email admin@example.com #Enter the required info
           - python runserver # this will run your settings.py and provide a link to your application for your browser  
             <img width="1247" height="211" alt="image" src="https://github.com/user-attachments/assets/3d41ec8e-60ce-4eac-a674-ed54c30ff719" />
 
