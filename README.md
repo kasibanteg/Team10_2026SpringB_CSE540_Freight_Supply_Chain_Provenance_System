@@ -24,34 +24,8 @@ Note: File with settings and configurations are always hidden for security reaso
  - files Location : Blockchain-Freight-SupplyChain/Jenik_freight_crm/**
 
 ## Project Folder and File structure
-Blockchain-Freight-SupplyChain/ # Root folder of the Django + Blockchain project
-│
-├─ apps/ # Django apps for different modules of the system
-│ ├─ Account_settings/ # User account management (profile, preferences)
-│ ├─ Bookings/ # Freight booking functionalities
-│ ├─ Documentations/ # Documentation forms and handling
-│ ├─ Home/ # Home page and dashboard
-│ ├─ Login/ # Authentication and login/logout
-│ ├─ Payments/ # Stripe payments, webhook handling
-│ ├─ Quotings/ # Freight quotes and price calculations
-│ ├─ Reports/ # Generating reports (CSV, PDF, etc.)
-│ └─ Shipments/ # Shipment tracking and details
-│
-├─ blockchain/ # Smart contract related files
-│ ├─ contracts/ # Solidity smart contracts
-│ │ ├─ Freight.sol # Freight-related smart contract
-│ │ └─ Payment.sol # Payment storage and tracking contract
-│ └─ migrations/ (optional for testnets) # Blockchain migrations (used in local/testnet deployments)
-│
-├─ dependencies/ # Shared resources and project-wide variables
-│ ├─ static/ # CSS, JS, images, and other static files
-│ ├─ templates/ # Django HTML templates
-│ └─ global_variables.py # Project-wide Python variables/settings
-│
-├─ manage.py # Django management script
-├─ README.md # Project documentation
-├─ requirements.txt # Python dependencies
-└─ .vscode/ # VSCode workspace settings (optional)
+<img width="1776" height="1680" alt="image" src="https://github.com/user-attachments/assets/f14a2d1a-cc0a-40d9-9d62-7e576f4b2e35" />
+
 
 ## Setup Instructions
 
