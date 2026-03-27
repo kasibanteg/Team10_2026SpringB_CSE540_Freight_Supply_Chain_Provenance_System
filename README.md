@@ -76,6 +76,8 @@ Update the generated public secure URL in settings.py
   
  14. Deploy smart contracts via Remix connected to Ganache or Polygon Amoy Testnet
 
+## Overview
+
   ## Usage
         - clients,Finance,Sales team can manage quoting, documentations, bookings, shipments, payments,their own account and reports
         - Users can view shipment status, confirm bookings,payments using debit and credit cards and optionally pay with ETH via MetaMask
