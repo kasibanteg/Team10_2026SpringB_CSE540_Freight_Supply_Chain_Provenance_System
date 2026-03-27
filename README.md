@@ -17,6 +17,7 @@ This project tracks freight shipments, booking confirmations, and payments using
 - Remix IDE
 - MetaMask Wallet
 - Ganache local blockchain (for testing)
+- Ngrok creates a public link to your localhost which can be accessed over the web to connect your application with stripe(only for local production)
 
 ## Setup PostgreSQL database and update
 Locate File: Team10_2026SpringB_CSE540_Freight_Supply_Chain_Provenance_System/Jenik_freight_crm/local_settings.py
@@ -36,7 +37,19 @@ Note: File with settings and configurations are always hidden for security reaso
 
 4. Install dependencies
     pip install -r requirements.txt
-5. Setup Stripe for payments
+   
+6. Run Django and it's migrations
+   Open Command Line. you can either use cmd or windows power shell and do the following
+    - locate your django instalation example: cd C:\Django_installation\django_activation\Scripts
+       - then: .\activate  #This will activate you django enviroment,
+       - After, Locate your django folder for  example: cd C:\Team10_2026SpringB_CSE540_Freight_Supply_Chain_Provenance_System
+       - Run below commands
+          - python manage.py makemigrations #this will create your tables ready to be uploaded on postgreeDB (the files run are in models.py)
+          - python manage.py migrate #this will upload create a database and your table schemas on postgreeDB
+          - python runserver # this will run your settings.py and provide a link to your application for your browser  
+    
+7. Use Ngrok : - Ngrok creates a public link to your localhost which can be accessed over the web to connect your application with stripe(only for local production)
+8. Setup Stripe for payments
    - create an account with stripe : https://stripe.com/en-ca #based on region
    - Go to dashboard -> developer and get API Keys and cpoy Publishable key and Secret key and update them in settings.py
    - Download stripe.exe if you are using windows and run it using command line enter stripe listen http: <port> #This Listens for webhook events and generates secret key with whsec_......... copy the key and update your settings.py #python page
@@ -46,14 +59,7 @@ Note: File with settings and configurations are always hidden for security reaso
 
 
 ## Run Django migrations
-Open Command Line. you can either use cmd or windows power shell and do the following
-- locate your django instalation example: cd C:\Django_installation\django_activation\Scripts
-   - then: .\activate  #This will activate you django enviroment,
-   - After, Locate your django folder for  example: cd C:\Team10_2026SpringB_CSE540_Freight_Supply_Chain_Provenance_System
-   - Run below commands
-      - python manage.py makemigrations #this will create your tables ready to be uploaded on postgreeDB (the files run are in models.py)
-      - python manage.py migrate #this will upload create a database and your table schemas on postgreeDB
-      - python runserver # this will run your settings.py and provide a link to your application for your browser  
+
 
 
 
