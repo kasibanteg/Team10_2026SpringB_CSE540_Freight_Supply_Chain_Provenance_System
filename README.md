@@ -23,6 +23,36 @@ This project tracks freight shipments, booking confirmations, and payments using
 Note: File with settings and configurations are always hidden for security reasons but for the case of the project, group10 will be providing a clear path to the files
  - files Location : Blockchain-Freight-SupplyChain/Jenik_freight_crm/**
 
+## Project Folder and File structure
+Blockchain-Freight-SupplyChain/
+│
+├─ apps/
+│  ├─ Account_settings/
+│  ├─ Bookings/
+│  ├─ Documentations/
+│  ├─ Home/
+│  ├─ Login/
+│  ├─ Payments/
+│  ├─ Quotings/
+│  ├─ Reports/
+│  └─ Shipments/
+│
+├─ blockchain/
+│  ├─ contracts/
+│  │   ├─ Freight.sol
+│  │   └─ Payment.sol
+│  └─ migrations/ (optional for testnets)
+│
+├─ dependencies/
+│  ├─ static/
+│  ├─ templates/
+│  └─ global_variables.py
+│
+├─ manage.py
+├─ README.md
+├─ requirements.txt
+└─ .vscode/
+
 ## Setup Instructions
 
 1. Setup PostgreSQL database and update
