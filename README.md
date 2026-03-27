@@ -19,9 +19,12 @@ This project tracks freight shipments, booking confirmations, and payments using
 - Ganache local blockchain (for testing)
 - Ngrok creates a public link to your localhost which can be accessed over the web to connect your application with stripe(only for local production)
 
-## Setup PostgreSQL database and update
-Locate File: Team10_2026SpringB_CSE540_Freight_Supply_Chain_Provenance_System/Jenik_freight_crm/local_settings.py
+## Locate Settings.py and local_settings.py
 Note: File with settings and configurations are always hidden for security reasons but for the case of the project, group10 will be providing a clear path to the files
+ - files Location : Team10_2026SpringB_CSE540_Freight_Supply_Chain_Provenance_System/Jenik_freight_crm/**
+
+## Setup PostgreSQL database and update
+Update/edit settings.py file
 
   ## Setup Instructions
 1. Clone the repository
