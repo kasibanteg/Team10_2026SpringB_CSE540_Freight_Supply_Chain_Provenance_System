@@ -58,7 +58,7 @@ Note: File with settings and configurations are always hidden for security reaso
 Update the generated public secure URL in settings.py
 
 9. Setup Stripe for payments
-   - Stripe will be handling Payments using Debit/Credit cards and sends a webhook through django using web3.js and stores payment transactions into on-chain(blockchain) service
+   - Stripe will be handling Payments using Debit/Credit cards and sends a webhook through django using web3.py and stores payment transactions into on-chain(blockchain) service
    - create an account with stripe : https://stripe.com/en-ca #based on region
    - Go to dashboard -> developer and get API Keys and cpoy Publishable key and Secret key and update them in settings.py
    - Download stripe.exe if you are using windows and run it using command line enter stripe listen http: <port> #This Listens for webhook events and generates  secret key with whsec_......... copy the key and update your settings.py #python page
