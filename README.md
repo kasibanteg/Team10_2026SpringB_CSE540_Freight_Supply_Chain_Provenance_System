@@ -24,7 +24,8 @@ Note: File with settings and configurations are always hidden for security reaso
  - files Location : Team10_2026SpringB_CSE540_Freight_Supply_Chain_Provenance_System/Jenik_freight_crm/**
 
 ## Setup PostgreSQL database and update
-Update/edit settings.py file
+ - Update/edit settings.py file
+ - PostgreSQL database will be handling off-Chain services like Bookings,Quoting,Documentation,User Accounts Settings
 
   ## Setup Instructions
 1. Clone the repository
@@ -57,12 +58,13 @@ Update/edit settings.py file
 Update the generated public secure URL in settings.py
 
 9. Setup Stripe for payments
+   - Stripe will be handling Payments using Debit/Credit cards and sends a webhook through django using web3.js and stores payment transactions into on-chain(blockchain) service
    - create an account with stripe : https://stripe.com/en-ca #based on region
    - Go to dashboard -> developer and get API Keys and cpoy Publishable key and Secret key and update them in settings.py
    - Download stripe.exe if you are using windows and run it using command line enter stripe listen http: <port> #This Listens for webhook events and generates  secret key with whsec_......... copy the key and update your settings.py #python page
    - <img width="1103" height="143" alt="image" src="https://github.com/user-attachments/assets/004eafe9-db6b-4479-86c8-6aed38e492ea" />
-10.  Install Web3.py via virtual Pyton environment
-11.  Install
+11.  Install Web3.py via virtual Pyton environment
+12.  Install
      - Vscode: To edit and write your python codes
      - Remix IDE : is a browser-based development environment used to write, edit, compile, run, and deploy smart contracts written in Solidity. It provides built-in tools for testing, debugging, and interacting with contracts, making it especially useful for beginners and rapid prototyping. Remix supports deployment to local blockchains, test networks, and the Ethereum mainnet, and integrates easily with wallets like MetaMask for transaction signing
      - MetaMask Wallet : is a popular crypto wallet and browser extension that allows users to store, send, and receive cryptocurrencies like Ethereum. It also acts as a gateway to decentralized applications, enabling secure interaction with blockchain networks directly from a web browser or mobile device.
