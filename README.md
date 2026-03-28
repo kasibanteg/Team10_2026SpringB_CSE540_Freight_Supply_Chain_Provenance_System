@@ -8,17 +8,31 @@ This project tracks freight shipments, booking confirmations, and payments using
 - **Stripe** for fiat payments (credit/debit)
 - **MetaMask + Remix** for Ethereum testnet interactions (optional ETH payments)
 
-## Dependencies
-- **Python 3.11+** – Core programming language
-- **Django 4.x** – Backend web framework
-- **PostgreSQL** – Database for storing application data
-- **Web3.py** – Interaction with Ethereum blockchain
-- **Stripe API** – Payment processing integration
-- **Remix IDE** – Smart contract development and deployment
-- **MetaMask Wallet** – User wallet for blockchain transactions
-- **Ganache** – Local Ethereum blockchain for testing
-- **Ngrok** generates a temporary public URL that tunnels requests to a local server, enabling external services like Stripe to communicate with a locally running application for development and webhook testing. Ngrok makes a locally running application accessible to Group10 members by providing a public URL, which is useful for quick demos and testing during development.
-- **requirements.txt** contains, **docx,docx2pdf,reportlab==4.4.3** (for generating invoices in Pdf and other reports conversion to Pdf from both Blockchain data store and PostgreSQL) and **django-anymail** for sending out email notifications from our system
+## 🚀 Dependencies
+
+### 🖥️ Backend & Core
+- **Python 3.11+** – Core programming language  
+- **Django 4.x** – Backend web framework  
+- **PostgreSQL** – Database for storing application data  
+
+### ⛓️ Blockchain
+- **Web3.py** – Interaction with Ethereum blockchain  
+- **Ganache** – Local Ethereum blockchain for testing  
+- **MetaMask Wallet** – User wallet for blockchain transactions  
+- **Remix IDE** – Smart contract development and deployment  
+
+### 💳 Payments & Integrations
+- **Stripe API** – Payment processing integration  
+- **Ngrok** – Exposes local server via a temporary public URL for Stripe webhooks, demos, and remote testing  
+
+### 📄 Reporting & Email
+- **requirements.txt packages**:
+  - `docx`, `docx2pdf`, `reportlab==4.4.3` – Generate invoices and convert reports to PDF (from Blockchain & PostgreSQL data)  
+  - `django-anymail` – Sending email notifications from the system  
+
+### 🎨 Frontend
+- **Bootstrap** – Responsive UI design  
+- **Vue.js** – Dynamic frontend interactions  
 
 ## Locate Settings.py and local_settings.py
 Note: File with settings and configurations are always hidden for security reasons but for the case of the project, group10 will be providing a clear path to the files
