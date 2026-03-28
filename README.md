@@ -211,7 +211,7 @@ Each Django model and smart contract function should have comments explaining:
   *Figure 7: Example of properly commented Django model explaining purpose, parameters, and usage.*
   
   ---
-<br><font color='red'>Developed by **Group10 Shippers Inc**, Spring 2026, Arizona State University</font>
+<br>Developed by **Group10 Shippers Inc**, Spring 2026, Arizona State University
 
         
 
