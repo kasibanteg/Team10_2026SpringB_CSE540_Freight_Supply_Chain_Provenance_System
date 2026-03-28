@@ -13,7 +13,8 @@ This project tracks freight shipments, booking confirmations, and payments using
 ### 🖥️ Backend & Core
 - **Python 3.11+** – Core programming language  
 - **Django 4.x** – Backend web framework  
-- **PostgreSQL** – Database for storing application data  
+- **PostgreSQL** – Database for storing application data
+- Optional: **Docker** – Containerize the backend, database, and blockchain nodes for easy local or production deployment  
 
 ### ⛓️ Blockchain
 - **Web3.py** – Interaction with Ethereum blockchain  
