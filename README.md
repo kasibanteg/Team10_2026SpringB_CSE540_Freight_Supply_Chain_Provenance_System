@@ -155,7 +155,7 @@ Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and
 - Smart contract logic is stored in blockchain/contracts/
 
 ## Smart Contract Structure & Interfaces
-Our project uses two smart contracts on Ethereum to handle payments and shipments securely:<br><br>
+Our project uses two smart contracts on Ethereum to handle payments and shipments securely:<br>
 
 ### Payment.sol
   - Manages all payment transactions for freight bookings.
