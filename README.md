@@ -76,9 +76,10 @@ Note: File with settings and configurations are always hidden for security reaso
           - python runserver # this will run your settings.py and provide a link to your application for your browser <br><br> 
             <img width="1247" height="211" alt="image" src="https://github.com/user-attachments/assets/3d41ec8e-60ce-4eac-a674-ed54c30ff719" />
 
-7. Use Ngrok : - Ngrok creates a public link to your localhost which can be accessed over the web to connect your application with stripe(only for local  production) so instead of using http://127.0.0.1:8000/ it will be converted to a secure public link so use that to access your application<br><br>
+7. Use Ngrok : - Ngrok creates a secure public URL for your local server, allowing external services like Stripe to access your application during development.
+Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and update your settings.py with this URL. This ensures Stripe can reach your application for testing webhooks and payments locally <br><br>
 <img width="1000" height="402" alt="image" src="https://github.com/user-attachments/assets/444df54f-5c9d-4ef5-bfeb-e992765d4009" />
-Update the generated public secure URL in settings.py
+
 
 8. Setup Stripe for payments
    - Stripe will be handling Payments using Debit/Credit cards and sends a webhook through django using web3.py and stores payment transactions into on-chain(blockchain) service
