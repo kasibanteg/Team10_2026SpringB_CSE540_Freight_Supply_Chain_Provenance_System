@@ -209,7 +209,9 @@ Each Django model and smart contract function should have comments explaining:
   <br>**Example in Django model:**<br>
   <img width="1150" height="331" alt="image" src="https://github.com/user-attachments/assets/fdb6356f-32ff-4390-849e-bfd02cc609c6" /><br>
   *Figure 7: Example of properly commented Django model explaining purpose, parameters, and usage.*
-
+  <br><br>
+  ---
+Developed by **Group10 Shippers Inc**, Spring 2026, Arizona State University
 
         
 
