@@ -81,7 +81,7 @@ This section describes the main folders and files in the project and their purpo
 │
 ├─ README.md <span style="color:gray;font-style:italic;"># Project documentation, setup instructions, code explanations, and figures</span>
 </pre>
-<br>*Figure 1: Overview of the project folder structure showing all main apps, blockchain folder, and supporting Django files.*
+*Figure 1: Overview of the project folder structure showing all main apps, blockchain folder, and supporting Django files.*
 
 
 ## Setup Instructions
