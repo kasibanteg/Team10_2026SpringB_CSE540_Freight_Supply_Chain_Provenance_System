@@ -41,9 +41,10 @@ Note: File with settings and configurations are always hidden for security reaso
 
 ## Project Folder and File structure
 This section describes the main folders and files in the project and their purposes.
-<br><br>
+<br>
 <pre>
-<b>Blockchain-Freight-SupplyChain/</b> <span style="color:gray;font-style:italic;"># Root folder of the Django + Blockchain project</span>
+<b>Blockchain-Freight-SupplyChain/</b> <span style="color:gray;font-style:italic;">
+# Root folder of the Django + Blockchain project</span>
 │
 ├─ <b>apps/</b> <span style="color:gray;font-style:italic;"># Django apps for different modules of the system</span>
 │  ├─ Account_settings/ <span style="color:gray;font-style:italic;"># User account management (profile, preferences)</span>
