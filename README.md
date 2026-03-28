@@ -18,7 +18,7 @@ This project tracks freight shipments, booking confirmations, and payments using
 - MetaMask Wallet
 - Ganache local blockchain (for testing)
 - Ngrok generates a temporary public URL that tunnels requests to a local server, enabling external services like Stripe to communicate with a locally running application for development and webhook testing. Ngrok makes a locally running application accessible to Group10 members by providing a public URL, which is useful for quick demos and testing during development.
-- requirements.txt contains, docx,docx2pdf,reportlab==4.4.3 (for generating invoices in Pdf and other reports conversion to Pdf)
+- requirements.txt contains, docx,docx2pdf,reportlab==4.4.3 (for generating invoices in Pdf and other reports conversion to Pdf from both Blockchain data store and PostgreSQL)
 
 ## Locate Settings.py and local_settings.py
 Note: File with settings and configurations are always hidden for security reasons but for the case of the project, group10 will be providing a clear path to the files
