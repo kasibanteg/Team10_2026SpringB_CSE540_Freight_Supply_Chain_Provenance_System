@@ -121,7 +121,7 @@ This section describes the main folders and files in the project and their purpo
             <br>*Figure 2: Output of python manage.py runserver showing the local server URL to access the application.*
             
 6a. **Optional: Run the Project Using Docker**  
-If you prefer not to manually install Python, PostgreSQL, or Ganache, you can use Docker to run the entire application in containers:
+- If you prefer not to manually install Python, PostgreSQL, or Ganache, you can use Docker to run the entire application in containers:
 
    - Make sure Docker Desktop is installed and running.
    - Navigate to the project root folder:  
