@@ -40,7 +40,7 @@ Note: File with settings and configurations are always hidden for security reaso
 
 ## Project Folder and File structure
 This section describes the main folders and files in the project and their purposes.<br>
-Figure 1: Overview of the project folder structure showing all main apps, blockchain folder, and supporting Django files.
+*Figure 1: Overview of the project folder structure showing all main apps, blockchain folder, and supporting Django files.*
 <br><br><img width="822" height="734" alt="image" src="https://github.com/user-attachments/assets/9169d850-e02f-4b95-b46b-12462cbe304e" />
 
 
