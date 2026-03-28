@@ -107,19 +107,19 @@ Update the generated public secure URL in settings.py
 - Smart contract logic is stored in blockchain/contracts/
 
 ## Smart Contract Structure & Interfaces
-Our project uses two smart contracts on Ethereum to handle payments and shipments securely:
+Our project uses two smart contracts on Ethereum to handle payments and shipments securely:<br><br>
 ### Payment.sol
   - Manages all payment transactions for freight bookings.
   - Tracks each payment with details such as sessionId, transactionId, amount, currency, and status (success/failed).
   - Emits events like PaymentCreated and EmailMarkedSent to notify the system when a payment occurs or a confirmation email is sent.
   - Only the contract owner can create and update payments, ensuring controlled and secure management.<br>
-  <img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" />
+  <img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" /><br><br>
 ### Shipment.sol
   - Handles creation, tracking, and status updates of shipments.
   - Stores shipment information like shipmentId, origin, destination, containerType, weight, status, and delivery confirmation.
   - Emits events such as ShipmentCreated, ShipmentStatusUpdated, and DeliveryConfirmed for real-time monitoring.
   - Only the contract owner can create or update shipments, maintaining integrity of shipment data.<br><br>
-  <img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/f11f6204-c083-4251-8442-ec6180d43f3b" />
+  <img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/f11f6204-c083-4251-8442-ec6180d43f3b" /><br><br>
 ### How Payment.sol and Shipment.sol work together:
 - When a customer makes a payment (Payment.sol), it is linked to a freight quote.
 - Once the payment is confirmed, a shipment record (Shipment.sol) is created and tracked until delivery.
