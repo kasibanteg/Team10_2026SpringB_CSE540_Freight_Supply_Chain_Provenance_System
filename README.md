@@ -110,7 +110,7 @@ Update the generated public secure URL in settings.py
 - Smart contract logic is stored in blockchain/contracts/
 
 ## Smart Contract Structure & Interfaces
-Our project uses two smart contracts on Ethereum to handle payments and shipments securely:
+- Our project uses two smart contracts on Ethereum to handle payments and shipments securely:
 **Payment.sol**
 - Manages all payment transactions for freight bookings.
 - Tracks each payment with details such as sessionId, transactionId, amount, currency, and status (success/failed).
