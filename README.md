@@ -120,7 +120,7 @@ This section describes the main folders and files in the project and their purpo
             <img width="1247" height="211" alt="image" src="https://github.com/user-attachments/assets/3d41ec8e-60ce-4eac-a674-ed54c30ff719" />
             <br>*Figure 2: Output of python manage.py runserver showing the local server URL to access the application.*
             
-6a. **Optional: Run the Project Using Docker**
+6. **Optional: Run the Project Using Docker**
      If you prefer not to manually install Python, PostgreSQL, or Ganache, you can use Docker to run the entire application in containers:
      - Make sure Docker Desktop is installed and running
      **a)**- Navigate to the project root folder: **cd Blockchain-Freight-SupplyChain**
