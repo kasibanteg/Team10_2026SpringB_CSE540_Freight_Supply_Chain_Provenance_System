@@ -5,9 +5,11 @@
 **Semester:** 2026 Spring B  
 **University:** Arizona State University, Tempe, AZ, USA
 
-This project implements a hybrid blockchain-Django solution for freight supply chain management. It enables secure shipment tracking, booking confirmations, and payments using Ethereum smart contracts, while providing a user-friendly interface with Django and Stripe integration. Key features include immutable payment records, shipment provenance, and automated reporting for admins and users.
+---
+
 ## Overview
-This project tracks freight shipments, booking confirmations, and payments using a hybrid architecture:
+This project implements a hybrid blockchain Django solution for freight supply chain management. It enables secure shipment tracking, booking confirmations, and payments using Ethereum smart contracts, while providing a user-friendly interface with Django and Stripe integration. Key features include immutable payment records, shipment provenance, and automated reporting for admins and users.<br>
+The project tracks freight shipments, booking confirmations, and payments using a hybrid architecture:
 - **Django backend** for authentication, quotes, bookings, and system configuration (PostgreSQL DB)
 - **Ethereum blockchain** for immutable storage of payments, shipment records, and status reports
 - **Stripe** for fiat payments (credit/debit)
