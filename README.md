@@ -111,9 +111,9 @@ Update the generated public secure URL in settings.py
 
 ## Smart Contract Structure & Interfaces
 **Payment.sol**
-<img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" />
+- <img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" />
 **Shipment.sol**
-<img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/f11f6204-c083-4251-8442-ec6180d43f3b" />
+- <img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/f11f6204-c083-4251-8442-ec6180d43f3b" />
 
 
 ## Code Documentation & Comments
