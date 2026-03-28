@@ -115,20 +115,23 @@ Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and
 
 ## Smart Contract Structure & Interfaces
 Our project uses two smart contracts on Ethereum to handle payments and shipments securely:<br><br>
+
 ### Payment.sol
   - Manages all payment transactions for freight bookings.
   - Tracks each payment with details such as sessionId, transactionId, amount, currency, and status (success/failed).
   - Emits events like PaymentCreated and EmailMarkedSent to notify the system when a payment occurs or a confirmation email is sent.
-  - Only the contract owner can create and update payments, ensuring controlled and secure management.<br>
+  - Only the contract owner can create and update payments, ensuring controlled and secure management.<br><br>
+  <img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" /><br>
   *Figure 5: Flow of Payment.sol showing payment creation, status updates, and email notification.*
-  <img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" /><br><br>
+
 ### Shipment.sol
   - Handles creation, tracking, and status updates of shipments.
   - Stores shipment information like shipmentId, origin, destination, containerType, weight, status, and delivery confirmation.
   - Emits events such as ShipmentCreated, ShipmentStatusUpdated, and DeliveryConfirmed for real-time monitoring.
   - Only the contract owner can create or update shipments, maintaining integrity of shipment data.<br><br>
+  <img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/f11f6204-c083-4251-8442-ec6180d43f3b" /><br>
   *Figure 6: Flow of Shipment.sol showing shipment creation, status updates, and delivery confirmation.*
-  <img width="903" height="505" alt="image" src="https://github.com/user-attachments/assets/f11f6204-c083-4251-8442-ec6180d43f3b" /><br><br>
+
 ### How Payment.sol and Shipment.sol work together:
 - When a customer makes a payment (Payment.sol), it is linked to a freight quote.
 - Once the payment is confirmed, a shipment record (Shipment.sol) is created and tracked until delivery.
@@ -141,7 +144,7 @@ Each Django model and smart contract function should have comments explaining:
 - Returns or effects
 - Example usage
   <br>**Example in Django model:**<br>
-  <img width="1150" height="331" alt="image" src="https://github.com/user-attachments/assets/fdb6356f-32ff-4390-849e-bfd02cc609c6" />
+  <img width="1150" height="331" alt="image" src="https://github.com/user-attachments/assets/fdb6356f-32ff-4390-849e-bfd02cc609c6" /><br>
   *Figure 7: Example of properly commented Django model explaining purpose, parameters, and usage.*
 
 
