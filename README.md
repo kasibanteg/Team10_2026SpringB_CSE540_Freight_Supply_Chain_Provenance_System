@@ -41,7 +41,7 @@ Note: File with settings and configurations are always hidden for security reaso
 ## Project Folder and File structure
 This section describes the main folders and files in the project and their purposes.
 <br><br><img width="822" height="734" alt="image" src="https://github.com/user-attachments/assets/9169d850-e02f-4b95-b46b-12462cbe304e" />
-*Figure 1: Overview of the project folder structure showing all main apps, blockchain folder, and supporting Django files.*
+<br>*Figure 1: Overview of the project folder structure showing all main apps, blockchain folder, and supporting Django files.*
 
 
 ## Setup Instructions
@@ -77,13 +77,13 @@ This section describes the main folders and files in the project and their purpo
              -  python manage.py createsuperuser --username admin --email admin@example.com #Enter the required info
           - python runserver # this will run your settings.py and provide a link to your application for your browser <br><br>
             <img width="1247" height="211" alt="image" src="https://github.com/user-attachments/assets/3d41ec8e-60ce-4eac-a674-ed54c30ff719" />
-            *Figure 2: Output of python manage.py runserver showing the local server URL to access the application.*
+            <br>*Figure 2: Output of python manage.py runserver showing the local server URL to access the application.*
 
 7. **Use Ngrok**<br>
 Ngrok creates a secure public URL for your local server, allowing external services like Stripe to access your application during development.
-Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and update your settings.py with this URL. This ensures Stripe can reach your application for testing webhooks and payments locally <br>
-*Figure 3: Ngrok generates a public secure URL for local development to allow Stripe access.*<br>
+Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and update your settings.py with this URL. This ensures Stripe can reach your application for testing webhooks and payments locally <br><br>
   <img width="1000" height="402" alt="image" src="https://github.com/user-attachments/assets/444df54f-5c9d-4ef5-bfeb-e992765d4009" />
+  <br>*Figure 3: Ngrok generates a public secure URL for local development to allow Stripe access.*
 
 
 8. **Setup Stripe for payments**
