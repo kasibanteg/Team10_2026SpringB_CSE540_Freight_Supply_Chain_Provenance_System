@@ -37,8 +37,8 @@ The project tracks freight shipments, booking confirmations, and payments using 
 
 ### ⛓️ Blockchain
 - **Web3.py** – Interaction with Ethereum blockchain  
-- **Ganache** – Local Ethereum blockchain for testing. <a href="https://archive.trufflesuite.com/ganache/">Download</a> 
-- **MetaMask Wallet** – User wallet for blockchain transactions  
+- **Ganache** – Local Ethereum blockchain for testing. <a href="https://archive.trufflesuite.com/ganache/" target="_blank">Download</a> 
+- **MetaMask Wallet** – User wallet for blockchain transactions. <a href="https://archive.trufflesuite.com/ganache/" target="_blank">Download</a>   
 - **Remix IDE** – Smart contract development and deployment  
 
 ### 💳 Payments & Integrations
