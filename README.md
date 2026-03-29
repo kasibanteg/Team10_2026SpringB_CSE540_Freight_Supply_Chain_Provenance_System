@@ -9,8 +9,8 @@
 ---
 
 ## Project Overview
-This project is designed and developed by group10 with the aim of implementing a hybrid blockchain Django solution for freight supply chain management. It enables secure shipment tracking, booking confirmations, and payments using Ethereum smart contracts, while providing a user friendly interface with Django and Stripe integration. Key features include immutable payment records, shipment provenance, and automated reporting for admins and users.<br>
-The project tracks freight shipments, booking confirmations, and payments using a hybrid architecture:
+This project is designed and developed by group10 with the aim of implementing a hybrid blockchain Django solution for freight supply chain management. It enables secure product creation for known clients or producers,shipment tracking, booking confirmations, and payments using Ethereum smart contracts, while providing a user friendly interface with Django and Stripe integration. Key features include immutable payment records, shipment provenance, and automated reporting for admins and users.<br>
+The project tracks product creation for known clients or producers,freight shipments, booking confirmations, and payments using a hybrid architecture:
 - **Django backend** for authentication, quotes, bookings, and system configuration (PostgreSQL DB)
 - **Ethereum blockchain** for immutable storage of payments, shipment records, and status reports
 - **Stripe** for payments (credit/debit)
@@ -208,7 +208,7 @@ Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and
 - Smart contract logic is stored in blockchain/contracts/
 
 ## Smart Contract Structure & Interfaces
-Our project uses two smart contracts on Ethereum to handle payments and shipments securely:<br>
+Our project uses three smart contracts on Ethereum to handle payments, shipments and product creation for known producers or clients securely:<br>
 
 ### Payment.sol
 
@@ -235,6 +235,18 @@ Our project uses two smart contracts on Ethereum to handle payments and shipment
 - Once the payment is confirmed, a shipment record (Shipment.sol) is created and tracked until delivery.
 - Events from both contracts allow the frontend to update the UI in real-time.
 
+### ProducerProduct.sol
+- Manages decentralized product registration and storage for supply chain systems.
+  - Restricts product creation to **approved producers** only, ensuring controlled and secure access.
+  - Allows the **contract owner (admin/producer/client)** to add or remove producers from the approved list.
+  - Stores each product with details such as `id`, `name`, `description`, `timestamp`, and `producer address`.
+  - Maintains an on-chain array of all products for transparent, immutable, and tamper-proof record keeping.
+  - Provides read functions like `getProductCount` and `getProduct` to efficiently retrieve product data.
+  - Emits `ProductCreated` events whenever a new product is added, enabling seamless integration with backend systems (e.g., Django) and real-time tracking.
+    <br><br>
+  <img width="917" height="580" alt="image" src="https://github.com/user-attachments/assets/d402de05-f986-4be4-877c-35e71462802a" /><br>
+
+*Figure 7: Flow of ProducerProduct.sol showing producer approval, product creation, and on-chain product retrieval.*
 ## Code Documentation & Comments
 Each Django model and smart contract function should have comments explaining:
 - Purpose
