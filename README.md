@@ -75,6 +75,7 @@ This section describes the main folders and files in the project and their purpo
 │  ├─ Payments/ <span style="color:gray;font-style:italic;"># Stripe payments, webhook handling</span>
 │  ├─ Quotings/ <span style="color:gray;font-style:italic;"># Freight quotes and price calculations</span>
 │  ├─ Reports/ <span style="color:gray;font-style:italic;"># Generating reports (CSV, PDF, etc.)</span>
+   ├─ Products/ <span style="color:gray;font-style:italic;"># Manages Products for Known clients,producers,suppliers</span>
 │  ├─ Shipments/ <span style="color:gray;font-style:italic;"># Shipment tracking and details</span>
 │  └─ Helpers/ <span style="color:gray;font-style:italic;"># Shared helper functions and utilities across apps</span>
 │
@@ -246,7 +247,7 @@ Our project uses three smart contracts on Ethereum to handle payments, shipments
     <br><br>
   <img width="917" height="580" alt="image" src="https://github.com/user-attachments/assets/d402de05-f986-4be4-877c-35e71462802a" /><br>
 
-  *Figure 7: Flow of ProducerProduct.sol showing producer approval, product creation, and on-chain product retrieval.*
+   *Figure 7: Flow of ProducerProduct.sol showing producer approval, product creation, and on-chain product retrieval.*
 ## Code Documentation & Comments
 Each Django model and smart contract function should have comments explaining:
 - Purpose
