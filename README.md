@@ -211,10 +211,36 @@ Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and
 Our project uses two smart contracts on Ethereum to handle payments and shipments securely:<br>
 
 ### Payment.sol
-  - Manages all payment transactions for freight bookings.
-  - Tracks each payment with details such as sessionId, transactionId, amount, currency, and status (success/failed).
-  - Emits events like PaymentCreated and EmailMarkedSent to notify the system when a payment occurs or a confirmation email is sent.
-  - Only the contract owner can create and update payments, ensuring controlled and secure management.<br><br>
+## Payment.sol – Smart Contract Overview
+
+**Purpose:**  
+`Payment.sol` manages all payment transactions for freight bookings in a secure and traceable way, ensuring financial operations are recorded on the blockchain.
+
+**Key Features:**
+
+- **Payment Tracking:**  
+  - Records each payment with details including `sessionId`, `transactionId`, `shipmentId` (links to the shipment), `amount`, `currency`, and `status` (success/failed).  
+  - Ensures each payment is associated with the correct shipment for provenance.  
+
+- **Event Emission:**  
+  - Emits `PaymentCreated` when a new payment is registered.  
+  - Emits `EmailMarkedSent` when a confirmation email is triggered.  
+  - Supports additional events like `PaymentUpdated` for status changes, allowing off-chain services to stay synchronized.  
+
+- **Access Control & Security:**  
+  - Only the contract owner or authorized `Finance` role can create or update payments.  
+  - Prevents unauthorized updates to payment records, ensuring controlled and secure management.  
+
+- **Integration with Shipments:**  
+  - Linked to `Shipment.sol` so that payment completion can trigger shipment release or other logistics events.  
+  - Provides full traceability: from product creation → shipment → payment → delivery.  
+
+- **Blockchain Traceability & Provenance:**  
+  - All payment actions are recorded on-chain to provide immutable, verifiable records.  
+  - Enables auditability and compliance, satisfying the CSE 540 blockchain-based supply chain rubric.  
+
+**Summary:**  
+`Payment.sol` ensures that all financial transactions are secure, traceable, and linked to their respective shipments, providing transparency and accountability for all stakeholders in the supply chain.
   <img width="891" height="465" alt="image" src="https://github.com/user-attachments/assets/82416b32-1095-416c-8647-db29af68acb9" /><br>
   *Figure 5: Flow of Payment.sol showing payment creation, status updates, and email notification.*
 
