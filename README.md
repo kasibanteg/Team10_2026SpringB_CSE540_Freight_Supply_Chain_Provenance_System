@@ -6,11 +6,6 @@
 **University:** Arizona State University, Tempe, AZ, USA <br>
 👥**Team Members:** *Ebrain Mirambeau, Neha Shivashankar Prasad, Hunter Jimenez, Geoffrey Kasibante, Twinkle Patel*
 
-![Course](https://img.shields.io/badge/Course-CSE%20540-blue)
-![Semester](https://img.shields.io/badge/Semester-Spring%202026-green)
-![Team](https://img.shields.io/badge/Team-Group10-orange)
-![Tech](https://img.shields.io/badge/Stack-Django%20%7C%20Blockchain%20%7C%20Stripe-purple)
-
 ---
 
 ## Project Overview
