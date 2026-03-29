@@ -30,20 +30,20 @@ The project tracks freight shipments, booking confirmations, and payments using 
 ## Dependencies
 
 ### 🖥️ Backend & Core
-- **Python 3.11+** – Core programming language  
-- **Django 4.x** – Backend web framework  
-- **PostgreSQL** – Database for storing application data
-- Optional: **Docker** – Containerize the backend, database, and blockchain nodes for easy local or production deployment  
+- **Python 3.11+** – Core programming language <a href="https://www.python.org/downloads/release/python-3110/" target="_blank">Download</a> 
+- **Django 4.x** – Backend web framework <a href="https://docs.djangoproject.com/en/6.0/releases/4.0/" target="_blank">Download</a> 
+- **PostgreSQL** – Database for storing application data. <a href="https://www.postgresql.org/" target="_blank">Download</a>
+- Optional: **Docker** – Containerize the backend, database, and blockchain nodes for easy local or production deployment. <a href="https://www.docker.com/" target="_blank">Download</a>  
 
 ### ⛓️ Blockchain
 - **Web3.py** – Interaction with Ethereum blockchain  
 - **Ganache** – Local Ethereum blockchain for testing. <a href="https://archive.trufflesuite.com/ganache/" target="_blank">Download</a> 
-- **MetaMask Wallet** – User wallet for blockchain transactions. <a href="https://archive.trufflesuite.com/ganache/" target="_blank">Download</a>   
-- **Remix IDE** – Smart contract development and deployment  
+- **MetaMask Wallet** – User wallet for blockchain transactions. <a href="https://metamask.io/download" target="_blank">Download</a>   
+- **Remix IDE** – Smart contract development and deployment. <a href="https://remix.ethereum.org/" target="_blank">Download</a>   
 
 ### 💳 Payments & Integrations
-- **Stripe API** – Payment processing integration  
-- **Ngrok** – Exposes local server via a temporary public URL for Stripe webhooks, demos, and remote testing  
+- **Stripe API** – Payment processing integration. <a href="https://stripe.dev/stripe-ios/stripe/documentation/stripe/stripeapi" target="_blank">Download</a>  
+- **Ngrok** – Exposes local server via a temporary public URL for Stripe webhooks, demos, and remote testing. <a href="https://ngrok.com/" target="_blank">Download</a>  
 
 ### 📄 Reporting & Email
 - **requirements.txt packages**:
