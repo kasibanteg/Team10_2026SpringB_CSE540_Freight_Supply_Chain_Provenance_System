@@ -16,14 +16,16 @@ The project tracks freight shipments, booking confirmations, and payments using 
 - **Stripe** for payments (credit/debit)
 - **MetaMask + Remix** for Ethereum testnet interactions (optional ETH payments)
   
-### 🔑 CRM Access Levels – Group10 Shippers Inc
+### 🔑 CRM Access Levels & Stakeholder Mapping – Group10 Shippers Inc
 
 | Role          | Stakeholder Mapping              | Description                                                                 | Example Username | Example Password      |
-|---------------|----------------------------------|-----------------------------------------------------------------------------|------------------|----------------------|
-| **Admin**     | Regulator / System Authority     | Full system access, manages users, permissions, and overall system settings | admin_user       | your_password_here   |
-| **Client**    | Consumer / Retailer              | Views own shipments, verifies delivery status, and tracks order history     | client_user      | your_password_here   |
-| **Finance**   | Financial Authority (Support)    | Handles payments, monitors transactions, and generates financial reports    | finance_user     | your_password_here   |
-| **Sales**     | Distributor / Supplier           | Manages bookings, quotations, and coordinates shipment operations           | sales1           | your_password_here   |
+|---------------|---------------------------------|-----------------------------------------------------------------------------|-----------------|----------------------|
+| **Producer**  | Producer / Manufacturer         | Creates and registers shipments/products on blockchain, initiating the provenance record | producer1       | your_password_here   |
+| **Admin**     | Regulator / System Authority    | Full system access, manages users, roles, permissions, and audits blockchain events | admin_user      | your_password_here   |
+| **Client**    | Retailer / Consumer             | Views shipments, confirms bookings, tracks delivery, verifies product authenticity | client_user     | your_password_here   |
+| **Finance**   | Financial Authority / Support   | Handles payments, monitors transactions, and generates financial reports    | finance_user    | your_password_here   |
+| **Sales**     | Distributor / Supplier          | Manages bookings, quotations, and coordinates shipment operations           | sales1          | your_password_here   |
+| **Warehouse** | Storage / Logistics Handler     | Updates shipment status (received, stored, dispatched)                     | warehouse1      | your_password_here   |
 
 > Table 1: **Note:** For security, real passwords are not included. Admins can create users or set test credentials in the Django admin panel.
 
