@@ -30,7 +30,7 @@ The project tracks freight shipments, booking confirmations, and payments using 
 ## Dependencies
 
 ### 🖥️ Backend & Core
-- **Python 3.11+** – Core programming language <a href="https://www.python.org/downloads/release/python-3110/" target="_blank">Download</a> 
+- **Python 3.11+** – Core programming language [Download](https://www.python.org/downloads/release/python-3110/)
 - **Django 4.x** – Backend web framework <a href="https://docs.djangoproject.com/en/6.0/releases/4.0/" target="_blank">Download</a> 
 - **PostgreSQL** – Database for storing application data. <a href="https://www.postgresql.org/" target="_blank">Download</a>
 - Optional: **Docker** – Containerize the backend, database, and blockchain nodes for easy local or production deployment. <a href="https://www.docker.com/" target="_blank">Download</a>  
