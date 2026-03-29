@@ -191,15 +191,17 @@ Instead of using http://127.0.0.1:8000/, use the Ngrok-generated public link and
 
 ## Usage
 
-- **Admin** (Regulator / System Authority) can manage users, roles, system settings, and audit blockchain records.  
-- **Clients / Consumers** can view their own shipments, confirm bookings, and track delivery status.  
-- **Finance** team can handle payments, view financial reports, and verify transactions on-chain.  
+- **Producer / Manufacturer** can create and register new shipments/products on the blockchain, initiating the provenance record. Each creation triggers a `ProductCreated` blockchain event.  
+- **Admin** (Regulator / System Authority) can manage users, roles, system settings, and audit all blockchain records for compliance.  
+- **Clients / Consumers** can view their shipments, confirm bookings, track delivery status, and verify product authenticity.  
+- **Finance** team can handle payments, monitor transactions, generate financial reports, and verify payments on-chain.  
 - **Sales / Distributor** team can create and manage bookings, quotations, and coordinate shipment operations.  
+- **Warehouse / Logistics Handler** can update shipment status during storage and delivery (e.g., received, stored, dispatched), triggering `StatusUpdated` events on the blockchain.  
 
-- Users can make payments using debit/credit cards and optionally pay with ETH via MetaMask.  
-- All payment transactions and shipment status updates are **recorded on blockchain** for traceability and accountability.  
-- Account settings, quoting, documentation, and bookings are stored in **PostgreSQL** as off-chain services.  
-- Each shipment and payment generates blockchain events (e.g., `ProductCreated`, `OwnershipTransferred`) to ensure provenance and auditability.
+- Users can make payments using **debit/credit cards** and optionally pay with **ETH via MetaMask**.  
+- All payment transactions and shipment status updates are **recorded on blockchain** for traceability, auditability, and provenance.  
+- Account settings, quoting, documentation, and bookings are stored in **PostgreSQL** as off-chain services to optimize storage and performance.  
+- Every shipment and payment action generates blockchain events (e.g., `ProductCreated`, `OwnershipTransferred`, `StatusUpdated`) to ensure a full **provenance trail** across the product lifecycle.
   
 ## Notes
 - ETH payments are optional; Stripe payments are fully functional
