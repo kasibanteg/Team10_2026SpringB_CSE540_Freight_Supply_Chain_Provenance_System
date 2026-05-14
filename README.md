@@ -189,7 +189,7 @@ Blockchain-Freight-SupplyChain/
      
 2. **Clone the repository**
    ```bash
-   git clone https://github.com/asuhunterjimenez/group10_2026SPRINGB_CSE540_Blockchain_Freight_Supply_Chain.git
+   git clone https://github.com/kasibanteg/Blockchain-Freight-SupplyChain.git
 
 3. **Install python Python 3.11+**
 
@@ -199,7 +199,7 @@ Blockchain-Freight-SupplyChain/
     venv\Scripts\activate      # Windows
 
 5. **Install dependencies pip install -r requirements.txt**
-   - requirements.txt contains, django,docx,docx2pdf,reportlab==4.4.3,stripe
+   - requirements.txt contains, django,docx,docx2pdf,reportlab==4.4.3
      
 6. **Run Django and it's migrations**
    Open Command Line. you can either use cmd or windows power shell and do the following
